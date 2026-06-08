@@ -1,45 +1,32 @@
-# Credit Card Churn Prediction using Machine Learning
+# Credit Card Churn Prediction Using Machine Learning
 
-## Overview
+## Project Overview
 
-This project focuses on predicting customer churn in the banking sector using Machine Learning techniques. The objective is to identify customers who are likely to discontinue their credit card services, enabling banks to take proactive retention measures and improve customer satisfaction.
+This project leverages Machine Learning techniques to predict customer churn in the banking sector. By analyzing customer demographics, account information, and transaction behavior, the model identifies customers who are likely to discontinue their credit card services.
 
-The project includes data preprocessing, exploratory data analysis, feature engineering, model development, evaluation, and an interactive prediction application.
+The objective is to help financial institutions proactively identify at-risk customers and implement effective retention strategies to reduce churn and improve customer lifetime value.
 
 ---
 
-## Problem Statement
+## Business Problem
 
-Customer churn is a major challenge for financial institutions. Losing existing customers can significantly impact revenue and profitability. This project aims to build a predictive model that identifies customers at risk of churn based on their demographic information, account details, and transaction behavior.
+Customer churn is a major challenge for financial institutions. Retaining existing customers is significantly more cost-effective than acquiring new ones. Predicting customer churn enables banks to take preventive actions, improve customer satisfaction, and increase profitability.
 
 ---
 
 ## Project Objectives
 
-* Analyze customer behavior and account activity.
-* Identify factors influencing customer churn.
-* Build and evaluate machine learning models.
-* Predict potential churn customers accurately.
-* Support data-driven customer retention strategies.
+* Analyze customer demographics and transaction behavior
+* Identify factors contributing to customer churn
+* Build and compare multiple machine learning models
+* Predict customers at risk of leaving
+* Support business decision-making through predictive analytics
 
 ---
 
-## Technologies Used
+## Dataset Description
 
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
-* Matplotlib
-* Seaborn
-* Streamlit
-* Joblib
-
----
-
-## Dataset Information
-
-The dataset contains customer-related information, including:
+The dataset contains customer demographic, account, and transaction-related information, including:
 
 * Customer Age
 * Gender
@@ -47,10 +34,81 @@ The dataset contains customer-related information, including:
 * Marital Status
 * Income Category
 * Credit Limit
+* Months on Book
+* Total Relationship Count
 * Total Transaction Amount
 * Total Transaction Count
-* Months on Book
-* Customer Relationship Metrics
+* Revolving Balance
+* Average Utilization Ratio
+
+---
+
+## Technology Stack
+
+### Programming Language
+
+* Python
+
+### Data Analysis & Processing
+
+* Pandas
+* NumPy
+
+### Data Visualization
+
+* Matplotlib
+* Seaborn
+
+### Machine Learning
+
+* Scikit-Learn
+* LightGBM
+* Random Forest Classifier
+* Gradient Boosting Classifier
+
+### Model Deployment
+
+* Streamlit
+
+### Model Serialization
+
+* Joblib
+
+---
+
+## Machine Learning Models
+
+Multiple machine learning algorithms were trained and evaluated to identify the most effective solution for customer churn prediction.
+
+### Models Evaluated
+
+* Random Forest Classifier
+* Gradient Boosting Classifier
+* LightGBM Classifier
+
+### Why Ensemble Models?
+
+Ensemble learning algorithms were selected because they:
+
+* Improve prediction accuracy
+* Reduce overfitting
+* Handle complex customer behavior patterns
+* Capture non-linear relationships effectively
+* Deliver robust performance on structured business data
+
+---
+
+## Model Evaluation
+
+The machine learning models were evaluated using industry-standard classification metrics:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* ROC-AUC Score
+
+The final model was selected after comparing the performance of all trained models on the test dataset. The selected model demonstrated strong predictive capability in identifying customers at risk of churn while maintaining a balance between precision and recall.
 
 ---
 
@@ -60,10 +118,24 @@ The dataset contains customer-related information, including:
 2. Data Cleaning and Preprocessing
 3. Exploratory Data Analysis (EDA)
 4. Feature Engineering
-5. Model Training
-6. Model Evaluation
-7. Churn Prediction
-8. Interactive Application Development
+5. Model Development
+6. Model Training
+7. Model Evaluation
+8. Customer Churn Prediction
+9. Interactive Application Deployment
+
+---
+
+## Key Features
+
+* Customer churn prediction using Machine Learning
+* Exploratory Data Analysis (EDA)
+* Data preprocessing and transformation
+* Feature engineering
+* Multiple model comparison
+* Customer risk identification
+* Interactive prediction interface
+* Business-focused insights and recommendations
 
 ---
 
@@ -86,37 +158,27 @@ credit-card-churn-prediction/
 
 ---
 
-## Key Features
+## Installation and Setup
 
-* Customer churn prediction using machine learning
-* Data preprocessing and feature engineering
-* Interactive prediction interface
-* Model performance evaluation
-* Business-oriented insights and recommendations
-
----
-
-## Installation
-
-Clone the repository:
+### Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/credit-card-churn-prediction.git
 ```
 
-Navigate to the project directory:
+### Navigate to the Project Directory
 
 ```bash
 cd credit-card-churn-prediction
 ```
 
-Install required packages:
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+### Run the Application
 
 ```bash
 python run.py
@@ -124,38 +186,61 @@ python run.py
 
 ---
 
+## Application Preview
+
+Add screenshots of the application, prediction results, and visualizations here.
+
+```markdown
+![Application Preview](app-preview.png)
+```
+
+---
+
 ## Business Impact
 
-This solution helps financial institutions:
+This project helps organizations:
 
+* Identify customers likely to churn
+* Improve customer retention strategies
 * Reduce customer attrition
-* Improve retention strategies
-* Identify high-risk customers
-* Enhance customer lifetime value
-* Support strategic decision-making
+* Increase customer lifetime value
+* Support data-driven business decisions
+
+---
+
+## Skills Demonstrated
+
+* Machine Learning
+* Customer Churn Prediction
+* Predictive Analytics
+* Random Forest
+* Gradient Boosting
+* LightGBM
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Model Evaluation
+* Python Programming
+* Streamlit Development
+* Business Intelligence
+* Data-Driven Decision Making
 
 ---
 
 ## Future Enhancements
 
-* Advanced ensemble models
-* Hyperparameter optimization
-* Real-time prediction system
-* Cloud deployment
-* Customer segmentation dashboard
-
----
-
-## Application Preview
-
-Add project screenshots here.
+* Hyperparameter Optimization
+* XGBoost Integration
+* Real-Time Prediction Pipeline
+* Cloud Deployment
+* Interactive Business Dashboard Integration
 
 ---
 
 ## Author
 
-**Anshika Vishnoi**
+### Anshika Vishnoi
 
 Aspiring Data Analyst | Machine Learning Enthusiast | Power BI Developer
 
-GitHub Portfolio: Continuously building data analytics and machine learning projects to solve real-world business problems.
+Passionate about transforming data into actionable insights through analytics, machine learning, and business intelligence solutions.
